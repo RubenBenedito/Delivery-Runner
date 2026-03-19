@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Guardar a direção do movimento
+        // Guardar a direcao do movimento
         Vector3 movimento = Vector3.zero;
 
         // Input System

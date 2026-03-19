@@ -1,44 +1,36 @@
 using UnityEngine;
 using UnityEngine.InputSystem; 
+
 public class PlayerMovement : MonoBehaviour
 {
-    public float velocidadeHorizontal = 10;
+    public float playerSpeed = 10;
+    public float speedHorizontal = 10;
+    public float rightLimit = 10.5f;
+    public float leftLimit = -10.5f;
 
     void Update()
     {
-        // Guardar a direcao do movimento
-        Vector3 movimento = Vector3.zero;
+        transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed, Space.World);
 
-        // Input System
-        var teclado = Keyboard.current;
-
-        if (teclado == null) return; 
-
-        // Frente
-        if (teclado.wKey.isPressed || teclado.upArrowKey.isPressed)
-        {
-            movimento += Vector3.forward;
-        }
-
-        // Tras
-        if (teclado.sKey.isPressed || teclado.downArrowKey.isPressed)
-        {
-            movimento += Vector3.back;
-        }
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null) return; 
 
         // Esquerda
-        if (teclado.aKey.isPressed || teclado.leftArrowKey.isPressed)
+        if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
         {
-            movimento += Vector3.left;
+            if (transform.position.x > leftLimit)
+            {
+                transform.Translate(Vector3.left * Time.deltaTime * speedHorizontal);
+            }
         }
 
-        // Direita
-        if (teclado.dKey.isPressed || teclado.rightArrowKey.isPressed)
-        {
-            movimento += Vector3.right;
+        // Direita 
+        if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
+        {   
+            if (transform.position.x < rightLimit)
+            {
+                transform.Translate(Vector3.right * Time.deltaTime * speedHorizontal);
+            }
         }
-
-        // Aplica o movimento final
-        transform.Translate(movimento * Time.deltaTime * velocidadeHorizontal);
     }
 }

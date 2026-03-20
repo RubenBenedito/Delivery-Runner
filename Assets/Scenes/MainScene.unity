@@ -206,7 +206,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2838702861796294328, guid: f63472ec2b2d2774fb73d48b0de1e700, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.9
+      value: -20.88
       objectReference: {fileID: 0}
     - target: {fileID: 2838702861796294328, guid: f63472ec2b2d2774fb73d48b0de1e700, type: 3}
       propertyPath: m_LocalPosition.y
@@ -214,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2838702861796294328, guid: f63472ec2b2d2774fb73d48b0de1e700, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -68
+      value: -45.34
       objectReference: {fileID: 0}
     - target: {fileID: 2838702861796294328, guid: f63472ec2b2d2774fb73d48b0de1e700, type: 3}
       propertyPath: m_LocalRotation.w
@@ -752,9 +752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   playerSpeed: 10
-  speedHorizontal: 15
-  rightLimit: 10
-  leftLimit: -10
+  laneWidth: 7
+  currentLane: 0
 --- !u!136 &1798655897
 CapsuleCollider:
   m_ObjectHideFlags: 0

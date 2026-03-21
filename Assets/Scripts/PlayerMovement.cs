@@ -9,13 +9,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Movimento para frente
+        // Frente
         transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed, Space.World);
 
         Keyboard keyboard = Keyboard.current;
         if (keyboard == null) return;
 
-        // ESQUERDA 
+        // Esquerda 
         if (keyboard.aKey.wasPressedThisFrame || keyboard.leftArrowKey.wasPressedThisFrame)
         {
             if (currentLane > 1)
@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // DIREITA 
+        // Direita 
         if (keyboard.dKey.wasPressedThisFrame || keyboard.rightArrowKey.wasPressedThisFrame)
         {
             if (currentLane < 3)
@@ -34,9 +34,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        // Lane = 1 -> (1 - 2) * 7 = -7 
-        // Lane = 2 -> (2 - 2) * 7 =  0 
-        // Lane = 3 -> (3 - 2) * 7 =  7 
+        // Lane = 1 -> (1 - 2) * 10 = -10 
+        // Lane = 2 -> (2 - 2) * 10 =  0 
+        // Lane = 3 -> (3 - 2) * 10 =  10 
         float targetX = (currentLane - 2) * laneWidth;
 
         Vector3 newPos = transform.position;

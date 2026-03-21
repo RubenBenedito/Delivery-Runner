@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float playerSpeed = 10;
     public float laneWidth = 10.0f; 
-    public int currentLane = 1;    
+    public int currentLane = 2;    
 
     void Update()
     {
@@ -15,33 +15,32 @@ public class PlayerMovement : MonoBehaviour
         Keyboard keyboard = Keyboard.current;
         if (keyboard == null) return;
 
-        // ESQUERDA - Mudamos para wasPressedThisFrame (clique único)
+        // ESQUERDA 
         if (keyboard.aKey.wasPressedThisFrame || keyboard.leftArrowKey.wasPressedThisFrame)
         {
-            if (currentLane > 0)
+            if (currentLane > 1)
             {
                 currentLane--;
             }
         }
 
-        // DIREITA - Mudamos para wasPressedThisFrame (clique único)
+        // DIREITA 
         if (keyboard.dKey.wasPressedThisFrame || keyboard.rightArrowKey.wasPressedThisFrame)
         {
-            if (currentLane < 2)
+            if (currentLane < 3)
             {
                 currentLane++;
             }
         }
 
-        // Cálculo exato:
-        // Se currentLane = 0 -> (0 - 1) * 7 = -7
-        // Se currentLane = 1 -> (1 - 1) * 7 = 0
-        // Se currentLane = 2 -> (2 - 1) * 7 = 7
-        float targetX = (currentLane - 1) * laneWidth;
 
-        // Movimento Suave
+        // Lane = 1 -> (1 - 2) * 7 = -7 
+        // Lane = 2 -> (2 - 2) * 7 =  0 
+        // Lane = 3 -> (3 - 2) * 7 =  7 
+        float targetX = (currentLane - 2) * laneWidth;
+
         Vector3 newPos = transform.position;
-        // Aumentei de 15f para 20f para ser mais responsivo (estilo Subway Surfers)
+
         newPos.x = Mathf.MoveTowards(newPos.x, targetX, Time.deltaTime * 25f);
         transform.position = newPos;
     }

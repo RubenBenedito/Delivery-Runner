@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+    [SerializeField] GameObject thePlayer;
+    [SerializeField] GameObject playerAnim;
 
     void OnTriggerEnter(Collider other)
     {
@@ -15,6 +17,7 @@ public class PlayerCollision : MonoBehaviour
     {
         Debug.Log("MORREU!"); 
 
-        GetComponent<PlayerMovement>().enabled = false;
+        thePlayer.GetComponent<PlayerMovement>().enabled = false;
+        playerAnim.GetComponent<Animator>().Play("Die");
     }
 }

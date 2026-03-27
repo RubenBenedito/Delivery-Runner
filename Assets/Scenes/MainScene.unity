@@ -12430,7 +12430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19755,7 +19755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21795,7 +21795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25432,6 +25432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d49b541e5ccd44a871169bcc6fd204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  thePlayer: {fileID: 1798655895}
+  playerAnim: {fileID: 1725388980}
 --- !u!4 &1805251024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 13bfc4c75c9ad4e4c9457712dbc8252a, type: 3}
@@ -25753,7 +25755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public float playerSpeed = 10;
-    public float laneWidth = 10.0f; 
-    public int currentLane = 2;    
+    public float laneWidth = 4.0f;
+    public int currentLane = 2;
 
     void Update()
     {
@@ -33,11 +33,10 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-
-        // Lane = 1 -> (1 - 2) * 10 = -10 
-        // Lane = 2 -> (2 - 2) * 10 =  0 
-        // Lane = 3 -> (3 - 2) * 10 =  10 
-        float targetX = (currentLane - 2) * laneWidth;
+        // Lane 1 -> (1 - 2) * 4 - 7.76 = -11.76
+        // Lane 2 -> (2 - 2) * 4 - 7.76 = -7.76 
+        // Lane 3 -> (3 - 2) * 4 - 7.76 = -3.76
+        float targetX = ((currentLane - 2) * laneWidth) - 7.76f;
 
         Vector3 newPos = transform.position;
 

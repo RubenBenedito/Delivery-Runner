@@ -7,6 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public float laneWidth = 4.0f;
     public int currentLane = 2;
 
+    public int pizzasColetadas = 0; // contador
+
+    public PizzaUI ui; // Referência para o script de UI
+
     void Update()
     {
         // Frente
@@ -39,8 +43,24 @@ public class PlayerMovement : MonoBehaviour
         float targetX = ((currentLane - 2) * laneWidth) - 7.76f;
 
         Vector3 newPos = transform.position;
-
         newPos.x = Mathf.MoveTowards(newPos.x, targetX, Time.deltaTime * 25f);
         transform.position = newPos;
+    }
+
+
+    // Coletar pizza
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pizza"))
+        {
+            pizzasColetadas++;
+            Destroy(other.gameObject);
+
+            // Atualizar UI
+            if (ui != null)
+            {
+                ui.UpdatePizzaCount(pizzasColetadas);
+            }
+        }
     }
 }

@@ -1081,6 +1081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1091,6 +1095,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1740700658}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1740700661}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1001 &86370793
 PrefabInstance:
@@ -2952,6 +2959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2962,6 +2973,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 532823220}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 532823223}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &185496951 stripped
 GameObject:
@@ -3371,7 +3385,6 @@ Transform:
   - {fileID: 2018657104}
   - {fileID: 1666307202}
   - {fileID: 953059236}
-  - {fileID: 1852341850}
   m_Father: {fileID: 1875293040}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215077035 stripped
@@ -3753,6 +3766,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &235673063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235673058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.0000009536743, y: 0.12900934, z: -0.00673154}
 --- !u!1001 &235775921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4945,6 +4979,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a6fbcaf08dee409b7cb28f83c4e70, type: 3}
+--- !u!1 &299457332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299457333}
+  - component: {fileID: 299457334}
+  m_Layer: 0
+  m_Name: GameOverUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &299457333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299457332}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1279.9427, y: -720.29, z: 2.48781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1850926584}
+  m_Father: {fileID: 2060834561}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &299457334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299457332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d37b19a66ce4e498c6670fc8b83684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverUI
+  gameOverText: {fileID: 1850926583}
 --- !u!1001 &301939250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5261,6 +5341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5271,6 +5355,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1206024848}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1206024851}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!4 &326729554 stripped
 Transform:
@@ -5334,6 +5421,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &338795247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338795242}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.0067277253}
 --- !u!1001 &340901121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6726,6 +6834,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &410559288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410559283}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.006725818}
 --- !u!1001 &411672300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6864,6 +6993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6874,6 +7007,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 410559285}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410559288}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1001 &426685254
 PrefabInstance:
@@ -6939,6 +7075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6949,6 +7089,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2021498994}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2021498997}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &427008281 stripped
 GameObject:
@@ -8303,6 +8446,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &532823223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532823218}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.0067277253}
 --- !u!4 &533651438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2838702861796294328, guid: f63472ec2b2d2774fb73d48b0de1e700, type: 3}
@@ -8977,6 +9141,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &570508020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570508015}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.00673154}
 --- !u!1001 &572369920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10263,9 +10448,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 661994897}
+  - component: {fileID: 661994898}
   m_Layer: 0
   m_Name: StartSegment
-  m_TagString: Untagged
+  m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10289,9 +10475,29 @@ Transform:
   - {fileID: 586693685}
   - {fileID: 1650928508}
   - {fileID: 1827668681}
-  - {fileID: 1439477343}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &661994898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661994896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &667619531 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
@@ -11013,6 +11219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -11023,6 +11233,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1300521271}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1300521274}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &702352904 stripped
 GameObject:
@@ -11652,6 +11865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -11662,6 +11879,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 235673060}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 235673063}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &739157122 stripped
 GameObject:
@@ -13688,6 +13908,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &827024583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827024578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.0067296326}
 --- !u!1001 &836596907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14762,6 +15003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -14772,6 +15017,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 570508017}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 570508020}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &914505817
 GameObject:
@@ -15129,6 +15377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -15139,6 +15391,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1677501432}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1677501435}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!4 &947135052 stripped
 Transform:
@@ -16133,6 +16388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -16143,6 +16402,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1447762486}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1447762489}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!4 &1011169065 stripped
 Transform:
@@ -19085,6 +19347,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1206024851
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206024846}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.0000019073486, y: 0.12900934, z: -0.0067277253}
 --- !u!1001 &1206069722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19971,6 +20254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -19981,6 +20268,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2129180303}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2129180306}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &1279720990
 GameObject:
@@ -20560,6 +20850,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1300521274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300521269}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.0000019073486, y: 0.12900934, z: -0.0067277253}
 --- !u!1001 &1302271717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20946,6 +21257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -20956,6 +21271,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1620308413}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620308416}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &1323864717 stripped
 GameObject:
@@ -21158,6 +21476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -21168,6 +21490,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 338795244}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 338795247}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &1343873233
 GameObject:
@@ -22726,9 +23051,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1439477343}
+  - component: {fileID: 1439477344}
   m_Layer: 0
   m_Name: PizzaBox
-  m_TagString: Untagged
+  m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22742,14 +23068,35 @@ Transform:
   m_GameObject: {fileID: 1439477342}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.2, y: -0.29, z: 22.2}
+  m_LocalPosition: {x: -8.788884, y: -0.060000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1989385936}
   - {fileID: 5668388}
-  m_Father: {fileID: 661994897}
+  m_Father: {fileID: 1852341850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1439477344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439477342}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1444922722
 GameObject:
   m_ObjectHideFlags: 0
@@ -22878,6 +23225,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1447762489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447762484}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0, y: 0.12900934, z: -0.0067277253}
 --- !u!1001 &1452070284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23970,6 +24338,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1511165946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511165941}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.0067277253}
 --- !u!1 &1516660341
 GameObject:
   m_ObjectHideFlags: 0
@@ -24773,6 +25162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -24783,6 +25176,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1511165943}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1511165946}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1001 &1539301151
 PrefabInstance:
@@ -26170,6 +26566,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1620308416
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620308411}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.006728679}
 --- !u!1001 &1621994233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26311,9 +26728,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1633144276}
+  - component: {fileID: 1633144277}
   m_Layer: 0
   m_Name: PizzaBox (1)
-  m_TagString: Untagged
+  m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26335,6 +26753,27 @@ Transform:
   - {fileID: 1028642504}
   m_Father: {fileID: 1852341850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1633144277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633144275}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1645544315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26849,6 +27288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -26859,6 +27302,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 827024580}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 827024583}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &1676781677 stripped
 GameObject:
@@ -26917,6 +27363,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1677501435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677501430}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.006728679}
 --- !u!1 &1682820136
 GameObject:
   m_ObjectHideFlags: 0
@@ -27433,6 +27900,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1740700661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740700656}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.00673154}
 --- !u!1 &1742139282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
@@ -28561,6 +29049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   thePlayer: {fileID: 1798655895}
   playerAnim: {fileID: 1725388980}
+  gameOverUI: {fileID: 299457334}
 --- !u!4 &1805251024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 13bfc4c75c9ad4e4c9457712dbc8252a, type: 3}
@@ -29004,6 +29493,143 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f63472ec2b2d2774fb73d48b0de1e700, type: 3}
+--- !u!1 &1850926583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1850926584}
+  - component: {fileID: 1850926586}
+  - component: {fileID: 1850926585}
+  m_Layer: 5
+  m_Name: GameOverText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1850926584
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850926583}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.48781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 299457333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1279.9427, y: 770.29}
+  m_SizeDelta: {x: 1000, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1850926585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850926583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Morreu
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282795735
+  m_fontColor: {r: 0.84276724, g: 0.27297163, b: 0.27297163, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 150
+  m_fontSizeBase: 150
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1850926586
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850926583}
+  m_CullTransparentMesh: 1
 --- !u!1 &1852341849
 GameObject:
   m_ObjectHideFlags: 0
@@ -29013,9 +29639,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1852341850}
+  - component: {fileID: 1852341851}
   m_Layer: 0
   m_Name: PizzaBox
-  m_TagString: Untagged
+  m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29029,8 +29656,8 @@ Transform:
   m_GameObject: {fileID: 1852341849}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.79, y: 0.57, z: 24.206114}
-  m_LocalScale: {x: 1, y: 1, z: 1.0928962}
+  m_LocalPosition: {x: 0.0074941004, y: 0.57, z: 0.07759563}
+  m_LocalScale: {x: 0.033333335, y: 1, z: 0.010928961}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1511165942}
@@ -29051,8 +29678,30 @@ Transform:
   - {fileID: 1300521270}
   - {fileID: 532823219}
   - {fileID: 1633144276}
-  m_Father: {fileID: 213661521}
+  - {fileID: 1439477343}
+  m_Father: {fileID: 1875293040}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1852341851
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852341849}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1855829374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
@@ -29076,6 +29725,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &1855829379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855829374}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.0067277253}
 --- !u!4 &1857627100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9202433844339282948, guid: 625a6fbcaf08dee409b7cb28f83c4e70, type: 3}
@@ -29437,6 +30107,7 @@ Transform:
   m_LocalScale: {x: 30, y: 1, z: 91.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1852341850}
   - {fileID: 213661521}
   m_Father: {fileID: 661994897}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32124,6 +32795,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &2021498997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021498992}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000047683716, y: 0.12900934, z: -0.0067272484}
 --- !u!4 &2022424985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
@@ -32500,6 +33192,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 299457333}
   - {fileID: 1279720991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33946,6 +34639,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableRotate
   rotateSpeed: 100
+--- !u!65 &2129180306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129180301}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.576004, y: 0.548634, z: 0.5760045}
+  m_Center: {x: 0.00000023841858, y: 0.12900934, z: -0.0067296326}
 --- !u!1001 &2129184323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34080,6 +34794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PizzaBox(3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -34090,6 +34808,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1855829376}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1855829379}
   m_SourcePrefab: {fileID: 100100000, guid: d295e9e8a8c5b8f4886c5b3c21609552, type: 3}
 --- !u!1 &2137024608 stripped
 GameObject:

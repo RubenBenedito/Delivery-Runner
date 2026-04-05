@@ -7,7 +7,7 @@ public class SegmentGenerator : MonoBehaviour
 
     [SerializeField] int zPosition = 91;
     [SerializeField] bool createSegment = false;
-    [SerializeField] float segmentLifetime = 20f;
+    [SerializeField] float segmentLifetime = 40f;
 
     void Update()
     {

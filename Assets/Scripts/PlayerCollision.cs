@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -26,5 +27,7 @@ public class PlayerCollision : MonoBehaviour
 
         // Mostrar texto "Morreu"
         gameOverUI.ShowGameOver();
+
+        SceneManager.LoadScene(0);
     }
 }

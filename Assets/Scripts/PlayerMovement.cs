@@ -5,14 +5,22 @@ public class PlayerMovement : MonoBehaviour
 {
     public float playerSpeed = 10;
     public float laneWidth = 4.0f;
+    public float maxSpeed = 35f;        
+    public float acceleration = 0.2f;
     public int currentLane = 2;
 
-    public int pizzasColetadas = 0; // contador
+    public int pizzasApanhadas = 0; 
 
-    public PizzaUI ui; // Referência para o script de UI
+    public PizzaUI ui; // Referencia para o script de UI
 
     void Update()
     {
+        
+        if (playerSpeed < maxSpeed)
+        {
+            playerSpeed += acceleration * Time.deltaTime;
+        }
+
         // Frente
         transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed, Space.World);
 
@@ -43,23 +51,23 @@ public class PlayerMovement : MonoBehaviour
         float targetX = ((currentLane - 2) * laneWidth) - 7.76f;
 
         Vector3 newPos = transform.position;
-        newPos.x = Mathf.MoveTowards(newPos.x, targetX, Time.deltaTime * 25f);
+        newPos.x = Mathf.MoveTowards(newPos.x, targetX, Time.deltaTime * 40f);
         transform.position = newPos;
     }
 
 
-    // Coletar pizza
+    // Apanhar pizza
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Pizza"))
         {
-            pizzasColetadas++;
+            pizzasApanhadas++;
             Destroy(other.gameObject);
 
             // Atualizar UI
             if (ui != null)
             {
-                ui.UpdatePizzaCount(pizzasColetadas);
+                ui.UpdatePizzaCount(pizzasApanhadas);
             }
         }
     }

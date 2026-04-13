@@ -18,13 +18,9 @@ public class PlayerCollision : MonoBehaviour
     {
         Debug.Log("MORREU!");
 
-        // Desativar movimento
         thePlayer.GetComponent<PlayerMovement>().enabled = false;
 
-        // Tocar animação de morte
         playerAnim.GetComponent<Animator>().Play("Die");
-
-        // Mostrar texto "Morreu"
         gameOverUI.ShowGameOver();
     }
 }

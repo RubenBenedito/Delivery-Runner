@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -22,5 +23,7 @@ public class PlayerCollision : MonoBehaviour
 
         playerAnim.GetComponent<Animator>().Play("Die");
         gameOverUI.ShowGameOver();
+
+        SceneManager.LoadScene(0);
     }
 }

@@ -4,20 +4,21 @@ using UnityEngine;
 public class SegmentGenerator : MonoBehaviour
 {
     public GameObject[] segment;
+    public Transform player;
 
     [SerializeField] int zPosition = 91;
-    [SerializeField] bool createSegment = false;
-    [SerializeField] float segmentLifetime = 20f;
+    [SerializeField] float segmentLifetime = 30f;
+    public float distanceToSpawn = 200f;
 
     void Update()
     {
-        if (createSegment) return;
-
-        createSegment = true;
-        StartCoroutine(SegmentGen());
+        if (player.position.z > zPosition - distanceToSpawn)
+        {
+            generateSegment();
+        }
     }
 
-    IEnumerator SegmentGen()
+    void generateSegment()
     {
         int segmentNum = Random.Range(0, segment.Length);
 
@@ -27,9 +28,5 @@ public class SegmentGenerator : MonoBehaviour
         Destroy(newSegment, segmentLifetime);
 
         zPosition += 91;
-
-        yield return new WaitForSeconds(8);
-
-        createSegment = false;
     }
 }

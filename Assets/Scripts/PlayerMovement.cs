@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float acceleration = 0.2f;
     public int currentLane = 2;
 
-    public float jumpForce = 15f;
+    public float jumpForce = 25f;
     private bool isGrounded = true;
 
     public int pizzasApanhadas = 0;
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
             playerSpeed += acceleration * Time.deltaTime;
 
         // Movimento para a frente
-        transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed, Space.World);
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y, playerSpeed);
 
         Keyboard keyboard = Keyboard.current;
         if (keyboard == null) return;
@@ -48,12 +48,18 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
 
-        // Movimento lateral suave
+
+        // Movimento para a frente
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y, playerSpeed);
+
+        // Movimento lateral
         float targetX = ((currentLane - 2) * laneWidth) - 7.76f;
-        Vector3 newPos = transform.position;
-        newPos.x = Mathf.MoveTowards(newPos.x, targetX, Time.deltaTime * 40f);
-        transform.position = newPos;
+        Vector3 targetPos = new Vector3(targetX, rb.position.y, rb.position.z);
+
+        rb.MovePosition(Vector3.MoveTowards(rb.position, targetPos, Time.fixedDeltaTime * 20f));
     }
+
+
 
     // Detetar chão
     private void OnCollisionEnter(Collision collision)

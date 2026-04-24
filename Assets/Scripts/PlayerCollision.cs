@@ -19,10 +19,7 @@ public class PlayerCollision : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        // Desativar movimento
         thePlayer.GetComponent<PlayerMovement>().enabled = false;
-
-        // Tocar animação de morte
         playerAnim.GetComponent<Animator>().Play("Die");
 
         SceneManager.LoadScene(2);

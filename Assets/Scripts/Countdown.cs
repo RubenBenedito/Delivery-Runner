@@ -13,7 +13,7 @@ public class Countdown : MonoBehaviour
     {
         player.enabled = false;
 
-        // apanhar o Animator no Player (ou no filho que tiver o Animator)
+        // apanhar o Animator no Player 
         anim = player.GetComponentInChildren<Animator>();
 
         if (anim != null)

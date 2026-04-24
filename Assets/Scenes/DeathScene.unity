@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 157885412}
   - component: {fileID: 157885414}
   - component: {fileID: 157885413}
+  - component: {fileID: 157885415}
   m_Layer: 5
   m_Name: Counter
   m_TagString: Untagged
@@ -468,6 +469,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157885411}
   m_CullTransparentMesh: 1
+--- !u!114 &157885415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157885411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97f02aac026b9a49b57264d0bba6de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

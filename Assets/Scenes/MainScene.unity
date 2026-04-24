@@ -31406,6 +31406,7 @@ GameObject:
   - component: {fileID: 1798655896}
   - component: {fileID: 1798655901}
   - component: {fileID: 1798655902}
+  - component: {fileID: 1798655903}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -31430,6 +31431,7 @@ MonoBehaviour:
   maxSpeed: 50
   acceleration: 0.2
   currentLane: 2
+  jumpForce: 15
   pizzasApanhadas: 0
   ui: {fileID: 1279720992}
 --- !u!136 &1798655897
@@ -31571,6 +31573,18 @@ MonoBehaviour:
   thePlayer: {fileID: 1798655895}
   playerAnim: {fileID: 1725388980}
   gameOverUI: {fileID: 299457334}
+--- !u!75 &1798655903
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798655895}
+  m_Enabled: 1
+  m_Force: {x: 0, y: -20, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!4 &1805251024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 13bfc4c75c9ad4e4c9457712dbc8252a, type: 3}

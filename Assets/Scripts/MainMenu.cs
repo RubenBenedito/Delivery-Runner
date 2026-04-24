@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private float timer = 3f;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

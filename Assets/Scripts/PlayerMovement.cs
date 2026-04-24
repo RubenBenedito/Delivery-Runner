@@ -9,9 +9,15 @@ public class PlayerMovement : MonoBehaviour
     public float acceleration = 0.2f;
     public int currentLane = 2;
 
+    public float jumpForce = 8f;      
+    private bool onGround = true;
+    public Rigidbody rigidBody;  
+    public Animator animator;
+
     public int pizzasApanhadas = 0; 
 
     public PizzaUI ui; // Referencia para o script de UI
+
 
     void Update()
     {
@@ -27,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         Keyboard keyboard = Keyboard.current;
         if (keyboard == null) return;
 
+       
         // Esquerda 
         if (keyboard.aKey.wasPressedThisFrame || keyboard.leftArrowKey.wasPressedThisFrame)
         {
@@ -45,6 +52,20 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        // Salto
+        if (keyboard.spaceKey.wasPressedThisFrame && onGround)
+        {
+            rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Impulso
+
+            if (animator != null)
+            {
+                animator.SetTrigger("doJump");
+            }
+
+            onGround = false;
+        }
+
+
         // Lane 1 -> (1 - 2) * 4 - 7.76 = -11.76
         // Lane 2 -> (2 - 2) * 4 - 7.76 = -7.76 
         // Lane 3 -> (3 - 2) * 4 - 7.76 = -3.76
@@ -55,6 +76,14 @@ public class PlayerMovement : MonoBehaviour
         transform.position = newPos;
     }
 
+    // Collision Ground
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Roud"))
+        {
+            onGround = true; 
+        }
+    }
 
     // Apanhar pizza
     void OnTriggerEnter(Collider other)

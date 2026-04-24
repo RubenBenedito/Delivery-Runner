@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour
 
     void MatarJogador()
     {
-        Debug.Log("MORREU!");
+        Time.timeScale = 1f;
 
         // Desativar movimento
         thePlayer.GetComponent<PlayerMovement>().enabled = false;
@@ -25,9 +25,6 @@ public class PlayerCollision : MonoBehaviour
         // Tocar animação de morte
         playerAnim.GetComponent<Animator>().Play("Die");
 
-        // Mostrar texto "Morreu"
-        gameOverUI.ShowGameOver();
-
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 }

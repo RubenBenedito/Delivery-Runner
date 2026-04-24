@@ -9,15 +9,20 @@ public class PlayerMovement : MonoBehaviour
     public float acceleration = 0.2f;
     public int currentLane = 2;
 
-    public float jumpForce = 8f;      
+    public float jumpForce = 15f;      
     private bool onGround = true;
-    public Rigidbody rigidBody;  
-    public Animator animator;
+    private Rigidbody rigidBody;
+    private Animator animator;
 
     public int pizzasApanhadas = 0; 
 
     public PizzaUI ui; // Referencia para o script de UI
 
+    void Start()
+    {
+        rigidBody = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
+    }
 
     void Update()
     {
@@ -55,7 +60,9 @@ public class PlayerMovement : MonoBehaviour
         // Salto
         if (keyboard.spaceKey.wasPressedThisFrame && onGround)
         {
-            rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Impulso
+            rigidBody.linearVelocity = new Vector3(0, 0, 0);
+
+            rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
             if (animator != null)
             {

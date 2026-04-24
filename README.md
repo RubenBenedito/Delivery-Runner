@@ -19,6 +19,7 @@
 O jogador controla uma personagem que corre automaticamente pela cidade, desviando-se de obstáculos, mudando de via e apanhando pizzas para aumentar a pontuação.
 
 O objetivo é ajudar o Sr. Fausto, que é um reformado que voltou às ruas como estafeta para superar a crise. Tem como finalidade ajudá-lo a sobreviver ao caos da cidade, entregando o máximo de pizzas possível para garantir o seu sustento.
+
 ---
 
 ## 🕹️ Jogabilidade

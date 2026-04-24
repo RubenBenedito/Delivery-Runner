@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 387d78cbd268f314ebb242de31cee9b3
   - enabled: 1
-    path: Assets/Scenes/DeathScene.unity
+    path: Assets/Scenes/DeathtScene.unity
     guid: 35b7adfce8c766d439a4433dcd11a017
   - enabled: 1
-    path: Assets/Scenes/ConfigsScene.unity
+    path: Assets/Scenes/AboutScene.unity
     guid: cac40ebf11fb9cc499fc27f42d884dc2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class MenuSetings : MonoBehaviour // MenuOptions
+public class MainMenu : MonoBehaviour // MenuOptions
 {
     public GameObject objetoMusica;
     public GameObject objetoSFX;
@@ -39,5 +39,17 @@ public class MenuSetings : MonoBehaviour // MenuOptions
     public void MenuOptions()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void SetMusic(bool isOn)
+    {
+        PlayerPrefs.SetInt("MusicEnabled", isOn ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+
+    public void SetSFX(bool isOn)
+    {
+        PlayerPrefs.SetInt("SFXEnabled", isOn ? 1 : 0);
+        PlayerPrefs.Save();
     }
 }

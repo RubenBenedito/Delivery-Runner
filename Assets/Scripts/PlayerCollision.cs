@@ -17,8 +17,6 @@ public class PlayerCollision : MonoBehaviour
 
     void MatarJogador()
     {
-        Time.timeScale = 1f;
-
         thePlayer.GetComponent<PlayerMovement>().enabled = false;
         playerAnim.GetComponent<Animator>().Play("Die");
 

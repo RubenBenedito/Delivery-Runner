@@ -1279,7 +1279,7 @@ GameObject:
   - component: {fileID: 1268209463}
   - component: {fileID: 1268209462}
   m_Layer: 5
-  m_Name: Configurations
+  m_Name: About
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1456,7 +1456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Defini\xE7\xF5es"
+  m_text: Sobre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1702,6 +1702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261f5c1467123c34b96e054e67f51a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  objetoMusica: {fileID: 0}
+  objetoSFX: {fileID: 0}
 --- !u!4 &1780981887
 Transform:
   m_ObjectHideFlags: 0

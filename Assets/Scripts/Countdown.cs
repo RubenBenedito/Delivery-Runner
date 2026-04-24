@@ -6,12 +6,17 @@ public class Countdown : MonoBehaviour
 {
     public TextMeshProUGUI countdownText;
     public PlayerMovement player;
-
+    public AudioSource musica;
     private Animator anim;
 
     void Start()
     {
         player.enabled = false;
+
+        if (musica != null)
+        {
+            musica.Stop();
+        }
 
         // apanhar o Animator no Player 
         anim = player.GetComponentInChildren<Animator>();
@@ -37,6 +42,10 @@ public class Countdown : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         countdownText.gameObject.SetActive(false);
+
+        if (musica != null){ 
+            musica.Play();
+        }
 
         if (anim != null)
             anim.speed = 1f;   // retoma a animação
